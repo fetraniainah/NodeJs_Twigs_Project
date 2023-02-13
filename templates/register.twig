@@ -1,0 +1,29 @@
+{% extends "base.twig" %}
+{% block title %}Discution{% endblock %}
+
+{% block body %}
+    <section id="cta" class="cta " style="height:100vh">
+      <div class="container" data-aos="zoom-in ">
+
+        <div class="row">
+          <div class="col-md-5 text-center mx-auto text-lg-start">
+          <h3 class="text-start py-2 me-4">Inscription</h3>
+            <div class="container">
+              <form action="/postUser" method="post">
+              <label>Votre nom</label>
+                <input type="text" name="user" placeholder="user" required class="form-control form-control-md shadow-none  mb-3">
+                <label>Votre email</label>
+                <input type="email" name="email" placeholder="email" required class="form-control form-control-md shadow-none mb-3 ">
+                <label>Votre votre password</label>
+                <input type="password" name="password" placeholder="password" required class="form-control mb-3 form-control-md shadow-none ">
+               <center><button type="submit" class="btn btn-md px-5 shadow-none btn-success text-white">Envoyer</button></center>
+
+               </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+{% endblock %}
